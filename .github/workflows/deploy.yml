@@ -1,0 +1,31 @@
+name: 自动部署
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+      - run: npm install --frozen-lockfile
+
+      - name: Build
+        run: npm docs:build
+
+      - name: 部署到云服务器
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          host: ${{ secrets.USER_HOST }}
+          user: ${{ secrets.USER_NAME }}
+          pass: ${{ secrets.USER_PASS }}
+          publish_dir: docs/.vitepress/dist
+          remote: /www/wwwroot/blog.gogogo7.com
