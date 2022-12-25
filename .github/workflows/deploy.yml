@@ -28,8 +28,8 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           password: ${{ secrets.USER_PASS}}
           post: 22
-          source: "docs/"
+          source: "docs/.vitepress/dist"
           target: ${{ secrets.USER_TARGET }}
-          github_token: ${{ secrets.USER_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+          # github_token: ${{ secrets.USER_TOKEN }}
+          # publish_dir: docs/.vitepress/dist
           # cname: blog.gogogo7.com # if wanna deploy to custom domain
