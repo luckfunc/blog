@@ -24,8 +24,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          host: ${{ secrets.USER_HOST }}
-          user: ${{ secrets.USER_NAME }}
-          pass: ${{ secrets.USER_PASS }}
+          github_token: ${{ secrets.USER_TOKEN }}
           publish_dir: docs/.vitepress/dist
           cname: blog.gogogo7.com # if wanna deploy to custom domain
