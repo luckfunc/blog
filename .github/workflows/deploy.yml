@@ -22,8 +22,14 @@ jobs:
         run: npm run docs:build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: appleboy/scp-action@v0.0.1
         with:
+          host: ${{ secrets.USER_HOST}}
+          username: ${{ secrets.USER_NAME }}
+          password: ${{ secrets.USER_PASS}}
+          post: 22
+          source: "docs/"
+          target: ${{ secrets.USER_TARGET }}
           github_token: ${{ secrets.USER_TOKEN }}
           publish_dir: docs/.vitepress/dist
-          cname: blog.gogogo7.com # if wanna deploy to custom domain
+          # cname: blog.gogogo7.com # if wanna deploy to custom domain
