@@ -1,4 +1,4 @@
-name: 自动部署
+name: Deploy
 
 on:
   push:
@@ -15,17 +15,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: npm
-      - run: npm install --frozen-lockfile
+          cache: yarn
+      - run: yarn install --frozen-lockfile
 
       - name: Build
-        run: npm docs:build
+        run: yarn docs:build
 
-      - name: 部署到云服务器
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           host: ${{ secrets.USER_HOST }}
           user: ${{ secrets.USER_NAME }}
           pass: ${{ secrets.USER_PASS }}
           publish_dir: docs/.vitepress/dist
-          remote: /www/wwwroot/blog.gogogo7.com
+          cname: blog.gogogo7.com # if wanna deploy to custom domain
