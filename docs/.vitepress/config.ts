@@ -24,7 +24,11 @@ export default {
         link: 'https://github.com/ddkkkk11'
       }
      
-    ]
+    ],
+    editLink: {
+      pattern: 'https://github.com/ddkkkk11/vitepress/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    }
 
   },
 
