@@ -1,11 +1,12 @@
 export default {
+  title: 'Blog',
   themeConfig: {
     siteTitle: '小薛的博客',
     logo: '/logo.jpg',
     description: '白天是个演员,晚上是个程序员',
     nav: [{
         text: 'Page',
-        link: '/test'
+        link: '/page'
       },
       {
         text: 'Home',

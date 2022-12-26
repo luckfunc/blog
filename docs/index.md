@@ -1,5 +1,6 @@
 ---
 layout: home
+title: 'Home'
 hero:
   name: 小薛的博客
   text: 白天是个演员,晚上是个程序员
@@ -14,6 +15,7 @@ features:
   - icon: 💣
     title: Notes
     details: Some notes
+    link: '/notes'
   - icon: 🥝
     title: Markdown
     details: Markdown
@@ -21,6 +23,7 @@ features:
   - icon: 🛠️
     title: Tools
     details: Here are some tools
+    link: '/tools'
 ---
 
 <style>

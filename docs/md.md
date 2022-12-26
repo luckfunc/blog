@@ -1,4 +1,7 @@
-
+---
+layout: doc
+title: md文档学习
+---
 - helloWorld
 - helloWorld
 ``` md
