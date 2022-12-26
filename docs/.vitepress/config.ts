@@ -1,7 +1,7 @@
 export default {
   title: 'Blog',
   lastUpdated: true,
-  cleanUrls: 'with-subfolders',
+  cleanUrls: 'without-subfolders',
   themeConfig: {
     siteTitle: '小薛的博客',
     logo: '/logo.jpg',
