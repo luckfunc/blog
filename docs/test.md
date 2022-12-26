@@ -1,3 +1,9 @@
+---
+layout: doc
+---
+
+
+:tada:
 ```js
-const fun = () => {};
+const fun = () => {}; 
 ```
