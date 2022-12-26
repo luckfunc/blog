@@ -11,15 +11,16 @@ hero:
       text: View on GitHub
       link: https://github.com/ddkkkk11
 features:
-  - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
-  - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
+  - icon: 💣
+    title: Notes
+    details: Some notes
+  - icon: 🥝
+    title: Markdown
+    details: Markdown
+    link: '/md'
   - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    title: Tools
+    details: Here are some tools
 ---
 
 <style>
