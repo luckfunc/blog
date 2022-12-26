@@ -44,7 +44,7 @@
 
 ```
 
-这是我的[博客]('https://gogogo7.com')
+这是我的<a href='https://gogogo7.com' target="_blank" rel="noreferrer">博客</a>
 
 ``` md
 这是我的[超链接名称](url) 
