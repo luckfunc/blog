@@ -2,11 +2,11 @@
 layout: home
 title: 'Home'
 hero:
-  name: 小薛的博客
-  text: 白天是个演员,晚上是个程序员
+  name: Roll
+  text: Can write bad code
   actions:
     - theme: brand
-      text: Get Started
+      text: Ation
       link: /page
     - theme: alt
       text: View on GitHub
@@ -19,7 +19,7 @@ features:
   - icon: 🥝
     title: Markdown
     details: Markdown
-    link: '/md'
+    link: './posts/learn/md'
   - icon: 🛠️
     title: Tools
     details: Here are some tools
@@ -27,8 +27,8 @@ features:
 ---
 
 <style>
-  :root {
+  /* :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
-}
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, red);
+} */
 </style>

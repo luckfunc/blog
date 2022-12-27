@@ -2,10 +2,6 @@
 layout: doc
 title: 'Notes'
 ---
-
-### todoList 
-> 想实现下拖拽比如github的pined位置的拖拽
-
 💣💣💣💣💣
 💣💣💣💣💣
 💣💣💣💣💣💣💣💣💣💣
