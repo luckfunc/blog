@@ -45,6 +45,7 @@ function sidebar() {
       items: [
         { text: 'TS', link: './posts/notes/ts' },
         { text: 'JS', link: './posts/notes/js' },
+        { text: 'Array', link: './posts/notes/array' },
       ]
     },
     {
