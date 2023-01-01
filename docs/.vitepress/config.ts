@@ -46,6 +46,7 @@ function sidebar() {
         { text: 'TS', link: './posts/notes/ts' },
         { text: 'JS', link: './posts/notes/js' },
         { text: 'Array', link: './posts/notes/array' },
+        { text: 'How to Learn', link: './posts/notes/如何快速学习新技术' },
       ]
     },
     {
