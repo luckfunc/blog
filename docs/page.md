@@ -5,5 +5,5 @@ title: 'Page'
 
 :tada:
 ```js
-const fun = () => {}; 
+const func = () => {}; 
 ```
