@@ -3,7 +3,7 @@ layout: home
 title: 'Home'
 hero:
   name: Roll
-  text: Can write bad code
+  text: 前端实习生
   actions:
     - theme: brand
       text: Ation
@@ -25,10 +25,3 @@ features:
     details: Here are some tools
     link: '/tools'
 ---
-
-<style>
-  /* :root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, red);
-} */
-</style>
