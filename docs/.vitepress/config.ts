@@ -1,7 +1,6 @@
 export default {
   title: 'Blog',
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
   themeConfig: {
     siteTitle: "Roll's blog",
     logo: '/logo.jpg',
