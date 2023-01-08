@@ -4,6 +4,9 @@ title: 'Home'
 hero:
   name: Roll
   text: 前端实习生
+  image:
+    src: 'https://tucdn.wpon.cn/2023/01/08/1034cbd28b1bd.svg'
+    alt: challenges
   actions:
     - theme: brand
       text: Ation
@@ -12,13 +15,13 @@ hero:
       text: View on GitHub
       link: https://github.com/ddkkkk11
 features:
-  - icon: 💣
-    title: Notes
-    details: Some notes
-    link: '/notes'
-  - icon: 🥝
-    title: Markdown
-    details: Markdown
+  - icon: TS
+    title: TS学习
+    details: TS相关笔记
+    link: '/posts/notes/ts'
+  - icon: Md
+    title: Markdown学习
+    details: 相关笔记
     link: './posts/learn/md'
   - icon: 🛠️
     title: Tools

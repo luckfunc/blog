@@ -2,6 +2,8 @@
 layout: doc
 title: md文档学习
 ---
+# Md学习记录
+## 无序列表
 - helloWorld
 - helloWorld
 ``` md
@@ -9,6 +11,7 @@ title: md文档学习
 - helloWorld
 - helloWorld
 ```
+## 有序列表
 1. helloWorld
 
     helloWorld
@@ -29,8 +32,9 @@ title: md文档学习
     helloWorld
     
     helloWorld
-
 ```
+## 区块引用
+
 > 区块引用
 > > 123
 > > > 123
@@ -46,7 +50,7 @@ title: md文档学习
     `console.log('HelloWorld')`
 
 ```
-
+## 超链接
 这是我的<a href='https://gogogo7.com' target="_blank" rel="noreferrer">博客</a>
 
 ``` md
@@ -59,7 +63,7 @@ title: md文档学习
 | HelloWorld| HelloWorld | 
 | HelloWorld| HelloWorld | 
 | HelloWorld| HelloWorld | 
-
+## 表格
 ``` md
 表格
 | 表头 | 表头 | 表头 | 
@@ -74,6 +78,7 @@ title: md文档学习
 | ----: |
 
 ```
+## 引用图片
 ### Roll Github Start
 ![Roll's Github chart](https://ghchart.rshah.org/ddkkkk11)
 ``` md
@@ -92,7 +97,7 @@ title: md文档学习
 [变量名]: https://gogogo7.com/
 
 ```
-# 区块
+## 区块
     这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域,这里是区域
 ``` md
 # title
@@ -101,10 +106,25 @@ title: md文档学习
     区域,这里是区域,这里是区域
 ```
 
-# 分割线
+## 分割线
 ---
 语法: ---
 
-# 任务块
+## 任务块
 - [x] 未完成
 - [ ] 已完成
+---
+## 折叠区域
+<details> 
+<summary>小工具</summary>
+
+- [免费快速的图床](https://tucdn.wpon.cn/)
+</details>
+
+```MD
+<details> 
+<summary>小工具</summary>
+//这里必须空行 不然下面的排序会消失
+- [免费快速的图床](https://tucdn.wpon.cn/)
+</details>
+```
