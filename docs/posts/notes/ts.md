@@ -166,7 +166,6 @@ const user: User = {
 //进行与操作 与运算 1&1 才为1 任何数字与上一个值还为这个值 则 这个数字拥有这个值的所有1 example: a&b === b 则a有b的所有1
 if ((user.permission & Permission.Write) === Permission.Write) {
   console.log('拥有写权限');
-  
 }
 
 export {}
