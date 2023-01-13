@@ -171,3 +171,186 @@ if ((user.permission & Permission.Write) === Permission.Write) {
 
 export {}
 ```
+## 枚举错误用法
+``` Ts
+//枚举的错误用法
+//number enum 1  string enum 0 other enum 0 
+enum Fruit {
+    apple = 'apple',
+    banana = 'banana'
+}
+// const f: Fruit = 'apple'; // err Type '"apple"' is not assignable to type 'Fruit'.
+const f: Fruit = Fruit.apple; 
+console.log(f)
+export {} 
+```
+## type
+```Ts
+const a: number = 1;
+console.log(a);
+//不用String Number Boolean 还有大写的Object(表示范围太大)
+//如何在TS中描述数据类型
+//用Class/constructor描述 比如Function Array<number>
+//使用type和interface描述对象
+
+
+type Person = {
+  name: string; //后面可以写;或者,
+  age: number;
+}
+const newPer: Person = {
+  name: 'roll',
+  age: 20
+}
+console.log('newPer', newPer)
+type A = {
+  [key: string]: number //表示对象的key必须是一个字符串  对象的val必须是数字 
+  //这种写法是索引签名
+}
+type Test = {
+  [key: string]: number
+}
+type A2 = Record<string, number>
+// Text ==> 等价于A2 
+const test: Test = {
+  '123': 123
+}
+//可以对key进行类型的检查 但是最后还是会转为字符串
+console.log(test[123])
+const newA: A = {
+  1: 1,
+ // 2: '123' //这里会报错 不能把string类型赋值给number  实际上是 不能把'123'这个字符串赋值给 val为number类型的值
+}
+type B = {
+  [key: symbol]: number
+}
+const bSon = Symbol();
+const b: B = {
+ // bSon: 123 //会报错
+ [bSon]: 123 //如果key值是Symbol 对象key必须用[]括起来 //索引签名必须是string number Symbol
+}
+export {}
+```
+## type 和interface的区别
+```Ts
+//type 和interface 的区别是什么 
+//1. interface只描述对象
+//2. type则描述所有数据
+//区别2
+// 1. type只是别名 (给一个已有的类型声明一个别名)
+// 2.interface 则是类型声明
+//基本上type可以用于任何类型  type生成的是一个类型的别名 而不是一个新的类型
+type Name = string;
+type FalseLike = '' | null | undefined | 0 | false ;
+type Point = { x: number, y: number };
+type Points = Point[]; 
+type line = [Point, Point];//二元组
+type Fn = (a: number, b: number) => {}//正常函数
+//带有属性的函数
+type FnWithProp = {
+  (a: number, b: number): void, //表示是一个函数
+  prop: string //函数里面有属性是prop
+}
+const f: FnWithProp = (x, y) => {
+  return x + y;
+}
+f.prop = 'helloWorld!';
+console.log('f', f)
+const zero: FalseLike = '';
+const hi: Name = 'hi';
+console.log('hi', hi);
+//interface 描述对象的属性
+ interface IUser {
+  username: string,
+  password: string
+ }
+ interface IUserAll {
+  [k: string]: number
+ }
+ const userAll: IUserAll = {
+  user0: 1,
+  user1: 2
+ }
+ console.log(userAll);
+ const user: IUser = {
+  username: 'xdd',
+  password: '123'
+}
+//interface 表示数组？
+interface X {
+  age: number
+}
+interface A extends Array<string>, X {
+//A拥有数组类型 还拥有age类型
+name: string //还有name属性
+}
+// ==> 
+type A1 = Array<string> & {
+  name: string
+}& X
+//interface描述函数
+interface IFn {
+  (a: number, b: number) : void
+  // sayHello: (a: string, b: string) => number,
+  miss: string
+}
+const Fn: IFn = () => {}
+Fn.miss = 'I am Missing!'
+//interface 日期属性
+interface D extends Date {
+  xxx: string,
+  age: number
+}
+const date: D = new Date();
+date.xxx = 'xxx';
+date.age = 20; //err  Type 'Date' is missing the following properties from type 'D': xxx, agets(2739) 
+// 
+console.log(date);
+
+//!!!!!!!!!!!!!
+type C = string; 
+type B = C; //type B = string 好像C就不存在
+//interface
+interface D extends Date {}
+type E = D; //type E = Dsh D是存在的
+export {}
+
+---
+//type interface 区别
+type A = number;
+// A = string; //不可以重新赋值  //缺点就是不能扩展
+const a: A = 123;
+interface X {
+    name: string
+}
+interface X {
+    age: number
+}
+const x: X = {
+    name: 'roll',
+    age: 22,
+}
+console.log(x); //interface 可以把类型合并
+console.log(a);
+declare global {
+    interface String {
+        sayHi(x: string): void
+    }
+}
+const str = 'String类型';
+str.sayHi('helloWorld!');
+//对外API尽量用Interface 方便扩展
+type newA = {
+    aaa: string
+}
+type newB = {
+    bbb: string
+} & newA
+const b: newB = {
+    aaa: 'sss',
+    bbb: 'asd'
+}
+console.log('b', b);
+export {}
+```
+## 
