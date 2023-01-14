@@ -306,7 +306,7 @@ date.age = 20; //err  Type 'Date' is missing the following properties from type 
 // 
 console.log(date);
 
-//!!!!!!!!!!!!!
+---
 type C = string; 
 type B = C; //type B = string 好像C就不存在
 //interface
