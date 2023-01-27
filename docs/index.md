@@ -13,7 +13,7 @@ hero:
       link: /page
     - theme: alt
       text: View on GitHub
-      link: https://github.com/ddkkkk11
+      link: https://github.com/Ddkkkk11/VitePress
 features:
   - icon: TS
     title: TS学习
