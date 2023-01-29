@@ -25,6 +25,6 @@ features:
     link: './posts/learn/md'
   - icon: 🛠️
     title: Tools
-    details: Here are some tools
+    details: 一些工具的集合
     link: '/tools'
 ---

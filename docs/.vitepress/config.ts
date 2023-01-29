@@ -54,6 +54,7 @@ function sidebar() {
       items: [
         { text: 'Md Notes', link: './posts/learn/md' },
       ]
-    }
+    },
+
   ]
 }
