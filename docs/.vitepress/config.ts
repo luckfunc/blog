@@ -55,6 +55,12 @@ function sidebar() {
         { text: 'Md Notes', link: './posts/learn/md' },
       ]
     },
+    {
+      text: '学习中遇到的问题',
+      items: [
+        { text: '一些遇到的问题', link: './posts/studynotes/遇到的问题.md' },
+      ]
+    },
 
   ]
 }
