@@ -3,7 +3,7 @@ export default {
   lastUpdated: true,
   themeConfig: {
     siteTitle: "Roll's blog",
-    logo: 'https://tucdn.wpon.cn/2023/01/08/84a4b2ff52a8d.jpg',
+    logo: 'https://tucdn.wpon.cn/2023/02/12/413ba15670c38.png',
     description: '白天是个演员,晚上是个程序员',
     nav: nav(),
     sidebar: sidebar(),
