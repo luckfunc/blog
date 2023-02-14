@@ -56,3 +56,16 @@ console.log(sumWithInitial);
 
 
 ```
+
+```js
+const arr = [1, 2, 3];
+//假设我要改变这个值
+const result = arr.filter(item => item === 1)[0] = "changeValue";
+//今天学习到的方法
+const result = arr.some(item = {
+  if(item === 1) {
+    item = "changeValue"
+    return true;
+  }
+})
+```
