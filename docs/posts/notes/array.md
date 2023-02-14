@@ -56,7 +56,9 @@ console.log(sumWithInitial);
 
 
 ```
+### Array.prototype.some 
 
+//匹配到对应的值结束，比filter更加节省效率
 ```js
 const arr = [1, 2, 3];
 //假设我要改变这个值
