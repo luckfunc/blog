@@ -59,6 +59,7 @@ console.log(sumWithInitial);
 ### Array.prototype.some 
 
 //匹配到对应的值结束，比filter更加节省效率
+//前提是当想取到第一个符合条件的值的时候,filter没有some效率高
 ```js
 const arr = [1, 2, 3];
 //假设我要改变这个值
