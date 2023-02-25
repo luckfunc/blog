@@ -3,7 +3,7 @@ layout: home
 title: 'Home'
 hero:
   name: Roll
-  text: 前端实习生
+  text: 一个前端实习生
   image:
     src: 'https://tucdn.wpon.cn/2023/02/07/0b3301c0a837d.png'
     alt: challenges
