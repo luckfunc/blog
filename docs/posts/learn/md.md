@@ -14,13 +14,6 @@ title: md文档学习
 ## 有序列表
 1. helloWorld!
 2. helloWorld!
-    helloWorld
-
-    helloWorld
-    
-    helloWorld
-    
-    helloWorld
 ``` md
 有序列表
 1. helloWorld //数字.空格   1.(这是一个空格)
