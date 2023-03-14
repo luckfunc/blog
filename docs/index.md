@@ -2,7 +2,7 @@
 layout: home
 title: 'Home'
 hero:
-  name: Roll
+  name: 小薛
   text: 一个前端实习生
   image:
     src: 'https://tucdn.wpon.cn/2023/02/07/0b3301c0a837d.png'

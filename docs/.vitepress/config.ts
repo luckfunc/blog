@@ -2,7 +2,7 @@ export default {
   title: 'Blog',
   lastUpdated: true,
   themeConfig: {
-    siteTitle: "Roll's blog",
+    siteTitle: "小薛的blog",
     logo: 'https://tucdn.wpon.cn/2023/02/25/8af8ac480bcd7.jpg',
     description: '白天是个演员,晚上是个程序员',
     nav: nav(),
