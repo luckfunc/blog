@@ -32,7 +32,7 @@ features:
     title: Git规范
     src: vue.svg
     details: Git提交规范
-    link: ./posts/notes/Git提交规范
+    link: ./posts/notes/git提交规范
  
     
 ---
