@@ -48,6 +48,7 @@ function sidebar() {
         { text: 'Npm ', link: './posts/notes/npm' },
         { text: 'TodoList', link: './posts/notes/今年的目标' },
         { text: 'How to Learn', link: './posts/notes/如何快速学习新技术' },
+        { text: 'Git提交规范', link: './posts/notes/git提交规范' },
       ]
     },
     {
