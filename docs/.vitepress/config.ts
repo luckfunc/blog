@@ -42,6 +42,7 @@ function sidebar() {
     {
       text: 'Notes',
       items: [
+        { text: 'React', link: './posts/notes/react' },
         { text: 'TS', link: './posts/notes/ts' },
         { text: 'JS', link: './posts/notes/js' },
         { text: 'Array', link: './posts/notes/array' },
