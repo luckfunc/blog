@@ -11,6 +11,10 @@ title: 'Tools'
 - [插画图地址](https://undraw.co/illustrations)
 ## css布局小样式
 - [地址](https://uiverse.io/)
+
+## ip地址测试
+- [地址](https://ip.skk.moe/)
+
 ## 生成树结构小工具
 - [tree-node-cli](https://github.com/yangshun/tree-node-cli#readme)
 ![tree](https://tucdn.wpon.cn/2023/02/22/2e7d7cbb52fc3.png)
