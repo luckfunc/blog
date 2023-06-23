@@ -53,6 +53,7 @@ function sidebar() {
         { text: 'TodoList', link: './posts/notes/今年的目标' },
         { text: 'How to Learn', link: './posts/notes/如何快速学习新技术' },
         { text: 'Git提交规范', link: './posts/notes/git提交规范' },
+        { text: '切换IDE的终端为linux.md', link: './posts/notes/在windows中切换IDE的终端为linux.md' },
       ]
     },
     {
