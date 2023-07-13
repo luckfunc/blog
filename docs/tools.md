@@ -49,3 +49,6 @@ tree -L 2 -I "node_modules | public"
 tree -L 2 -I "node_modules" > readme.md
 就可以得到上面图片显示的结果啦
 ```
+## 常用字体
+  - Cascadia Code
+  - MonoLisa
