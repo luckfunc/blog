@@ -50,5 +50,6 @@ tree -L 2 -I "node_modules" > readme.md
 就可以得到上面图片显示的结果啦
 ```
 ## 常用字体
-  - Cascadia Code
-  - MonoLisa
+  - [Cascadia Code](https://github.com/microsoft/cascadia-code)
+  - [MonoLisa](https://github.com/Eason0210/Monolisa/blob/master/MonoLisa-Regular.ttf)
+  - [Input Mono](https://input.djr.com/)
