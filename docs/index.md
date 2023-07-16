@@ -3,8 +3,7 @@ layout: home
 title: 'Home'
 hero:
   name: 小薛
-  # text: 写不出好代码，那就看别人写
-  tagline: 写不出好代码，那就看别人写
+  tagline: 平平无奇的小牛马
   image:
     src: 'https://tucdn.wpon.cn/2023/02/07/0b3301c0a837d.png'
     alt: challenges
