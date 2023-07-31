@@ -10,8 +10,3 @@ func main() {
 	fmt.Println("a == *ptr", ) // a == *ptr true
 }
 ```
-:email:
----
-<!-- ![image](page.png) -->
-![image](https://tucdn.wpon.cn/2023/01/08/5e3c056d74772.png)
-
