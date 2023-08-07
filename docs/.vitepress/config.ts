@@ -58,6 +58,13 @@ function sidebar() {
       ]
     },
     {
+      text: 'JavaScript',
+      items: [
+        { text: 'import和export', link: './posts/javascript/import' },
+      ]
+
+    },
+    {
       text: 'Markdown',
       items: [
         { text: 'Md Notes', link: './posts/learn/md' },
