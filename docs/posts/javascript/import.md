@@ -19,3 +19,15 @@ import { circleArea, squareArea } from './'
 ```js
 import { circleArea as circle, squareArea as square } from './'
 ```
+
+### 默认导出
+>假设模块中只有一个成员, 可以这么写
+```ts
+export default function getName(name: string) {
+    return name
+}
+```
+>默认导出后的导入
+```ts
+import getName from './index';
+```
