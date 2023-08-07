@@ -1,6 +1,6 @@
-## import和export
+# import和export
 
-### export
+## export
 ```js
 const circleArea = r => 3.14 * (r ** r);
 const squareArea = s => s * s;
@@ -11,7 +11,7 @@ export { circleArea, squareArea }
 export const circleArea = r => 3.14 * (r ** r);
 export const squareArea = s => s * s;
 ```
-### import
+## import
 ```js
 import { circleArea, squareArea } from './'
 ```
@@ -20,7 +20,7 @@ import { circleArea, squareArea } from './'
 import { circleArea as circle, squareArea as square } from './'
 ```
 
-### 默认导出
+## 默认导出
 >假设模块中只有一个成员, 可以这么写
 ```ts
 export default function getName(name: string) {
