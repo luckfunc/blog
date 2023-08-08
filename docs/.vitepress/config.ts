@@ -60,9 +60,14 @@ function sidebar() {
     {
       text: 'JavaScript',
       items: [
-        { text: 'import和export', link: './posts/javascript/import' },
+        { text: 'import和export', link: './posts/js/import' }
       ]
-
+    },
+    {
+      text: 'TypeScript',
+      items: [
+        { text: 'TypeScript总结', link: './posts/ts/index' }
+      ]
     },
     {
       text: 'Markdown',

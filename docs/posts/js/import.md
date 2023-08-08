@@ -27,7 +27,8 @@ export default function getName(name: string) {
     return name
 }
 ```
->默认导出后的导入
+>默认导出后的导入,不需要在导入的时候使用{}
+> 注意： 只有在模块有多个成员被导出的时候使用花括号
 ```ts
 import getName from './index';
 ```
