@@ -2,7 +2,7 @@
 layout: home
 title: 'Home'
 hero:
-  name: 顶级压力小子
+  name: 
   tagline: 在上班和上进之间选择了上香
   image:
     src: 'https://tucdn.wpon.cn/2023/02/07/0b3301c0a837d.png'
