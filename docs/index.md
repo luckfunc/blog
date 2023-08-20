@@ -2,8 +2,8 @@
 layout: home
 title: 'Home'
 hero:
-  name: 小薛
-  tagline: 平平无奇的小牛马
+  name: 顶级压力小子
+  tagline: 在上班和上进之间选择了上香
   image:
     src: 'https://tucdn.wpon.cn/2023/02/07/0b3301c0a837d.png'
     alt: challenges
