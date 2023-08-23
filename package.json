@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vitepress dev docs",
     "build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",

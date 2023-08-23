@@ -70,6 +70,12 @@ function sidebar() {
       ]
     },
     {
+      text: 'WorkFlow',
+      items: [
+        { text: 'Github Action', link: './posts/workflow/index' }
+      ]
+    },
+    {
       text: 'Markdown',
       items: [
         { text: 'Md Notes', link: './posts/learn/md' },
