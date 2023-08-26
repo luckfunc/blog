@@ -1,3 +1,4 @@
-# VitePress
-VitePress
-## blog站点源码
+# Blog
+
+## LICENSE 
+Have a look at the [license file](./license) for details
