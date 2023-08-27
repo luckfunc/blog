@@ -7,6 +7,6 @@ title: 'Page'
 func main() {
 	a := 1
 	ptr := &a
-	fmt.Println("a == *ptr", ) // a == *ptr true
+	fmt.Println("a == *ptr") // a == *ptr true
 }
 ```
