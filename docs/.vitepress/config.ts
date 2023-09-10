@@ -12,11 +12,11 @@ export default {
     sidebar: sidebar(),
     socialLinks: [{
       icon: 'github',
-      link: 'https://github.com/ddkkkk11'
+      link: 'https://github.com/luckfunc'
     }
     ],
     editLink: {
-      pattern: 'https://github.com/ddkkkk11/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/luckfunc/vitepress/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     }
 
@@ -35,7 +35,7 @@ function nav() {
     },
     {
       text: 'Github',
-      link: 'https://github.com/ddkkkk11'
+      link: 'https://github.com/luckfunc'
     }
   ]
 }

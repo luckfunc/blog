@@ -13,7 +13,7 @@ hero:
       link: /page
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Ddkkkk11/VitePress
+      link: https://github.com/luckfunc/VitePress
 features:
   - icon: 😁
     title: TS学习
