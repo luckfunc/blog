@@ -32,6 +32,4 @@ features:
     src: vue.svg
     details: Git提交规范
     link: ./posts/notes/git提交规范
- 
-    
 ---

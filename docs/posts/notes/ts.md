@@ -54,7 +54,7 @@ const r2: RegExp = new RegExp('ab+c');
 console.log('r', r);
 const m: Map<string, number> = new Map();
 m.set('1', 2);
-const vm: WeakMap<{ name: string}, number> = new WeakMap();
+const vm: WeakMap<{ name: string }, number> = new WeakMap();
 console.log('vm', vm)
 //小写Object什么意思
 type A = object;
@@ -112,10 +112,10 @@ export {}
 ```
 ## dom表示
 ```Ts
-// const button = document.getElementById("#root");
+// const button = document.getElementById('#root');
 // if (button) {
   // button// 如果button存在则button为HTMLElement
-  // button.addEventListener("click", () => {}, undefined);
+  // button.addEventListener('click', () => {}, undefined);
 // }
 type A = null;
 const a: A = null;//声明一个集合为空
@@ -129,7 +129,7 @@ type F = (this: Person, name: string) => void;
 const Fn: F = function(name) {
   console.log(this.name);
 }
-Fn.call({name: "qwe"}, "Roll"); //如果使用this必须放到第一个 而且只能叫this
+Fn.call({name: 'qwe'}, 'Roll'); //如果使用this必须放到第一个 而且只能叫this
 const x = {};
 export {}
 
@@ -178,7 +178,7 @@ enum Fruit {
     apple = 'apple',
     banana = 'banana'
 }
-// const f: Fruit = 'apple'; // err Type '"apple"' is not assignable to type 'Fruit'.
+// const f: Fruit = 'apple'; // err Type ''apple'' is not assignable to type 'Fruit'.
 const f: Fruit = Fruit.apple; 
 console.log(f)
 export {} 

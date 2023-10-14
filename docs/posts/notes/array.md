@@ -22,14 +22,14 @@ const oldArr = [
   { key: 2, value: 'b'},
   { key: 3, value: 'c'},
   { key: 4, value: 'd'},
-  { key: 5, value: 'e'},
+  { key: 5, value: 'e'}
 ];
-const newArr = oldArr.map (({ key, value}) => {
+const newArr = oldArr.map (({key, value}) => {
   return {
     [key]: value
   }
 })
-console.log(newArr); 
+console.log(newArr);
 //result [{ "1": "a" },{ "2": "b" },{ "3": "c" },{ "4": "d" },{ "5": "e"}];
 ```
 ## Array.prototype.reduce
@@ -53,8 +53,6 @@ const sumWithInitial = arr.reduce(
 console.log(sumWithInitial);
 // 如果initialValue是1 则是 1+1+2 因为第一次进入的话 上一次的元素 也就是默认值是1 
 // expected output: 3
-
-
 ```
 ### Array.prototype.some 
 
@@ -67,7 +65,7 @@ const result = arr.filter(item => item === 1)[0] = "changeValue";
 //今天学习到的方法
 const result = arr.some(item = {
   if(item === 1) {
-    item = "changeValue"
+    item = 'changeValue'
     return true;
   }
 })
