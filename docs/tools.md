@@ -54,8 +54,9 @@ tree -L 2 -I "node_modules" > readme.md
   - [MonoLisa](https://github.com/Eason0210/Monolisa/blob/master/MonoLisa-Regular.ttf)
   - [Input Mono](https://input.djr.com/)
   - 配合使用
-    1. [Operator Mono](https://github.com/beichensky/Font) 非官网
-    2. [FiraCode](https://github.com/tonsky/FiraCode)
+    1. 先下载[FiraCode](https://github.com/tonsky/FiraCode)
+    2. 在下载[Operator Mono](https://github.com/beichensky/Font) 非官网
+    
 
 ## 前端官网参考
   - 国内
