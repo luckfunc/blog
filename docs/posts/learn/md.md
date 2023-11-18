@@ -44,7 +44,7 @@ title: md文档学习
 
 ```
 ## 超链接
-这是我的<a href='https://gogogo7.com' target="_blank" rel="noreferrer">博客</a>
+这是我的<a href='https://luckfunc.com' target="_blank" rel="noreferrer">博客</a>
 
 ``` md
 这是我的[超链接名称](url) 
@@ -81,13 +81,13 @@ title: md文档学习
 
 [博客地址][RollBlog]
 
-[RollBlog]: https://gogogo7.com/
+[RollBlog]: https://luckfunc.com/
 ``` md
 图片引用
 
 [博客地址][变量名]
 
-[变量名]: https://gogogo7.com/
+[变量名]: https://luckfunc.com/
 
 ```
 ## 区块
