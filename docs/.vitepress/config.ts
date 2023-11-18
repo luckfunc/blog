@@ -3,7 +3,7 @@ export default {
   lastUpdated: true,
   themeConfig: {
     siteTitle: "顶级压力小子",
-    logo: 'https://tucdn.wpon.cn/2023/02/25/8af8ac480bcd7.jpg',
+    logo: 'https://github.com/luckfunc/react-color-avatar/assets/85545304/6721c2f9-abe0-4bf0-8163-86224bd31d89',
     description: '白天是个演员,晚上是个程序员',
     head:[
       ['link', { rel: 'icon', href: '/favicon.ico' }]
