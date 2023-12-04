@@ -66,7 +66,13 @@ function sidebar() {
     {
       text: 'TypeScript',
       items: [
-        { text: 'TypeScript总结', link: './posts/ts/index' }
+        { text: 'TypeScript总结', link: './posts/ts/index' },
+      ]
+    },
+    {
+      text: 'Nginx',
+      items: [
+        { text: 'Nginx学习', link: './posts/nginx/index' },
       ]
     },
     {
