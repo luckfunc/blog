@@ -5,7 +5,7 @@ hero:
   name: 'function'
   tagline: 在上班和上进之间选择了上香
   image:
-    src: 'https://github.com/luckfunc/react-color-avatar/assets/85545304/79f9103a-bf49-4651-a162-0e7314a5000f'
+    src: 'https://tucdn.wpon.cn/2023/12/04/9df6a887fedc4.svg'
     alt: challenges
   actions:
     - theme: brand
