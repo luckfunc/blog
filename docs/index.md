@@ -3,7 +3,7 @@ layout: home
 title: 'Home'
 hero:
   name: 'function'
-  tagline: 在上班和上进之间选择了上香
+  tagline: 世界时一个巨大的草台班子
   image:
     src: 'https://tucdn.wpon.cn/2023/12/04/9df6a887fedc4.svg'
     alt: challenges
