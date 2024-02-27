@@ -1,3 +1,12 @@
+---
+prev: 
+  text: 'Js'
+  link: '/posts/notes/js'
+next: 
+  text: 'Array'
+  link: '/posts/notes/array'
+---
+
 # JavaScript
 ## 导出方式
 ```js

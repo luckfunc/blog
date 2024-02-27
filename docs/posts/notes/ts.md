@@ -1,3 +1,11 @@
+---
+prev: 
+  text: 'React'
+  link: '/posts/notes/React'
+next: 
+  text: 'Js'
+  link: '/posts/notes/js'
+---
 # TypeScript
 ## 箭头函数对象
 ``` Ts

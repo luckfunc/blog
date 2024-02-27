@@ -2,6 +2,12 @@
 layout: doc
 title: 数组
 date: '2022-11-24 00:23:00'
+prev:
+    text: 'Js'
+    link: '/posts/notes/js'
+next:
+    text: 'TODOList'
+    link: '/posts/notes/今年的目标'
 ---
 ## func
 ``` javascript
@@ -64,9 +70,6 @@ const arr = [1, 2, 3];
 const result = arr.filter(item => item === 1)[0] = "changeValue";
 //今天学习到的方法
 const result = arr.some(item = {
-  if(item === 1) {
-    item = 'changeValue'
-    return true;
-  }
+  return item === 1;
 })
 ```
