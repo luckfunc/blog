@@ -4,8 +4,6 @@ next:
   link: '/posts/notes/React'
 ---
 
-link: '/posts/notes/array'
-
 # 今年要做的事情
 
 ## TODO List
