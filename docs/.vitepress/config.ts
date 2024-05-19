@@ -43,6 +43,12 @@ function nav() {
 function sidebar() {
   return [
     {
+      text: '2024TODO',
+      items: [
+        { text: '2024TODO', link: './posts/2024-todo/todo' },
+      ]
+    },
+    {
       text: 'Notes',
       items: [
         { text: 'React', link: './posts/notes/React' },

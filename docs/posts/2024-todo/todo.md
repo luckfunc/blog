@@ -1,0 +1,16 @@
+---
+next: 
+  text: 'React'
+  link: '/posts/notes/React'
+---
+
+link: '/posts/notes/array'
+
+# 今年要做的事情
+
+## TODO List
+### 前端
+1. 实现一个打牌记分小程序。
+### 后端
+1. 使用go+gin+gorm实现打牌小程序的后端。
+2. 了解前后端socket机制。
