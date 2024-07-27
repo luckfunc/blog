@@ -1,7 +1,8 @@
 ---
-layout: post
-title: ESM和CommonJs
+layout: doc
+title: ESM和CommonJs    
 ---
+
 ### CommonJS 规范
 #### 引入方式
 ```js
@@ -50,3 +51,4 @@ if (true) {
     });
 }
 ```
+
