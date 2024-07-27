@@ -2,11 +2,10 @@
 Thumbs.db
 db.json
 *.log
-node_modules/
-public/
+node_modules/*
 .deploy*/
 .vscode/
 /.idea/
 .deploy_git*/
 .idea
-docs/.vitepress/docs/*
+docs/.vitepress/dist/*

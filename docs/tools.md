@@ -67,4 +67,4 @@ tree -L 2 -I "node_modules" > readme.md
 ## Bento grid design设计风格网站
   - [Bento Grids](https://bentogrids.com/)
   ### 预览
-  ![Bento Grids](./public/bento-design-preview.png)
+  ![Bento Grids](/icons/bento-design-preview.png)
