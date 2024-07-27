@@ -5,7 +5,7 @@ export default {
     siteTitle: "幸运函数",
     logo: '/avatar.png',
     description: '白天是个演员,晚上是个程序员',
-    head:[
+    head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     nav: nav(),
@@ -71,6 +71,12 @@ function sidebar() {
       text: 'TypeScript',
       items: [
         { text: 'TypeScript总结', link: './posts/ts/index' },
+      ]
+    },
+    {
+      text: 'nodeJs学习',
+      items: [
+        { text: 'Es Module和commonJs', link: './posts/nodeJs/esm和commonJs' },
       ]
     },
     {
