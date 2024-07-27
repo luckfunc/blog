@@ -5,7 +5,7 @@ hero:
   name: '😋'
   tagline: 世界是一个巨大的草台班子
   image:
-    src: 'https://tucdn.wpon.cn/2023/12/04/9df6a887fedc4.svg'
+    src: '/banner.svg'
     alt: challenges
   actions:
     - theme: brand

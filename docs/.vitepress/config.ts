@@ -3,7 +3,7 @@ export default {
   lastUpdated: true,
   themeConfig: {
     siteTitle: "幸运函数",
-    logo: 'https://tucdn.wpon.cn/2023/12/04/8b9613ecd89e6.jpg',
+    logo: '/avatar.png',
     description: '白天是个演员,晚上是个程序员',
     head:[
       ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -19,7 +19,6 @@ export default {
       pattern: 'https://github.com/luckfunc/vitepress/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     }
-
   },
 }
 //导航栏配置
@@ -99,6 +98,5 @@ function sidebar() {
         { text: '一些遇到的问题', link: './posts/studynotes/遇到的问题.md' },
       ]
     },
-
   ]
 }
