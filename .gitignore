@@ -9,3 +9,4 @@ node_modules/*
 .deploy_git*/
 .idea
 docs/.vitepress/dist
+docs/.vitepress/cache
