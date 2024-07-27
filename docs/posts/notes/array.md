@@ -6,8 +6,8 @@ prev:
     text: 'Js'
     link: '/posts/notes/js'
 next:
-    text: 'TODOList'
-    link: '/posts/notes/今年的目标'
+    text: 'npm'
+    link: '/posts/notes/npm'
 ---
 ## func
 ``` javascript

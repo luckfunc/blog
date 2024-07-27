@@ -1,3 +1,12 @@
+---
+prev: 
+  text: '如何学习'
+  link: '/posts/notes/如何快速学习新技术'
+next:
+  text: '在windows中切换IDE的终端为linux'
+  link: '/posts/notes/在windows中切换IDE的终端为linux'
+---
+
 # Git 提交规范
 
 让ChatGpt给我生成了一份git的提交规范，以后提交代码的时候按照这个规范走，后续有遇到的问题在继续补充一下。

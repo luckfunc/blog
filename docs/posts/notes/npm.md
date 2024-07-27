@@ -1,6 +1,12 @@
 ---
 layout: doc
 title: 'Npm'
+prev:
+    text: 'Array'
+    link: '/posts/notes/array'
+next: 
+    text: '如何快速学习新技术'
+    link: '/posts/notes/如何快速学习新技术'
 ---
 ### npm的命令
 ``` cmd
