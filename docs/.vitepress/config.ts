@@ -80,6 +80,7 @@ function sidebar() {
         { text: '全局变量&全局API', link: './posts/nodeJs/全局变量和全局API' },
         { text: 'path方法', link: './posts/nodeJs/path' },
         { text: 'os模块', link: './posts/nodeJs/os' },
+        { text: 'exec小实践', link: './posts/nodeJs/exec' },
       ]
     },
     {
