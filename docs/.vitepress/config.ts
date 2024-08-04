@@ -79,6 +79,7 @@ function sidebar() {
         { text: 'Es Module和commonJs', link: './posts/nodeJs/esm和commonJs' },
         { text: '全局变量&全局API', link: './posts/nodeJs/全局变量和全局API' },
         { text: 'path方法', link: './posts/nodeJs/path' },
+        { text: 'os模块', link: './posts/nodeJs/os' },
       ]
     },
     {
