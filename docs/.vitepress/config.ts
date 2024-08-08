@@ -84,6 +84,12 @@ function sidebar() {
       ]
     },
     {
+      text: '前端工程化实践',
+      items: [
+        { text: 'package.json文件配置', link: './posts/前端工程化实践/packjson文件配置' },
+      ]
+    },
+    {
       text: 'Nginx',
       items: [
         { text: 'Nginx学习', link: './posts/nginx/index' },
