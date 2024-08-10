@@ -2,12 +2,9 @@
 ```js
     const os = require('node:os');
     const { exec } = require('node:child_process');
-```
 // exec可以执行shell命令
 // 1. 获取操作系统的信息，windows返回win32, mac返回darwin, linux返回linux, android返回android
-```js
 console.log(os.platform());
-```
 //   type Platform =
     // | "aix"
     // | "android"
@@ -20,16 +17,13 @@ console.log(os.platform());
     // | "win32"
     // | "cygwin"
     // | "netbsd";
-```js
 // 2. 获取操作系统的版本
 console.log('release', os.release());
 console.log('type', os.type()); // windows_NT darwin linux
 console.log('version', os.version());
-```
 
 // webpack vite rollup open=true
 // 判断不同的操作系统，打开浏览器
-```js
 const platform = os.platform();
 const open = (url)  => {
     if (platform === 'win32') {
@@ -44,10 +38,8 @@ const open = (url)  => {
 }
 // 打开浏览器
 open('https://github.com');
-```
 
 // 3. 获取用户user目录
-```js
 // homeDir 读取用户目录 windows: %UserProfile%, mac: $HOME, linux: $HOME
 console.log(os.homedir());
 // 4. 获取cpu架构
@@ -73,6 +65,4 @@ console.log(os.cpus().length); // 读取的是cpu的核数
     },
 */
 console.log(os.networkInterfaces());
-
-
 ```
