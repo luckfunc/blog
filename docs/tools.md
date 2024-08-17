@@ -6,6 +6,10 @@ title: 'Tools'
 ## Kill Port ![npm downloads](https://img.shields.io/npm/dt/kill-port-process-cli)
 - [kill-port-process-cli](https://github.com/luckfunc/kill-port-process-cli)
   > 通过 `k <port>` 命令可以杀掉指定端口对应的进程。
+## base64编码
+- [base64编码工具](http://base64.const.site/)
+### 预览
+  ![base64编码工具](/icons/base64-encode-tool.png)
 ## 常用字体
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 - [MonoLisa](https://github.com/Eason0210/Monolisa/blob/master/MonoLisa-Regular.ttf)
