@@ -3,7 +3,10 @@ layout: doc
 title: 'Tools'
 ---
 # 一些工具
-## 博客相关
+## Kill Port ![npm downloads](https://img.shields.io/npm/dt/kill-port-process-cli)
+- [kill-port-process-cli](https://github.com/luckfunc/kill-port-process-cli)
+  > 通过 `k <port>` 命令可以杀掉指定端口对应的进程。
+
 - [免费快速的图床](https://tucdn.wpon.cn/)
 ## 表格组件
 - [gridmanager组件官网](https://gridmanager.lovejavascript.com/api/index.html)

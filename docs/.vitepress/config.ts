@@ -16,7 +16,7 @@ export default {
     }
     ],
     editLink: {
-      pattern: 'https://github.com/luckfunc/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/luckfunc/blog/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     }
   },
