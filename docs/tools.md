@@ -17,6 +17,9 @@ title: 'Tools'
 - 配合使用
   1. 先下载[FiraCode](https://github.com/tonsky/FiraCode)
   2. 在下载[Operator Mono](https://github.com/beichensky/Font) 非官网
+## svg图标
+  - [github官方图标库](https://primer.style/octicons)
+  - [字节图标库](https://iconpark.oceanengine.com/official)
 ## 插画图
 - [插画图地址](https://undraw.co/illustrations)
 ## css布局小样式
