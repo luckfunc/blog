@@ -84,6 +84,12 @@ function sidebar() {
       ]
     },
     {
+      text: 'Linux',
+      items: [
+        { text: 'Linux常用命令', link: './posts/linux/linux常用命令' },
+      ]
+    },
+    {
       text: '前端工程化实践',
       items: [
         { text: 'package.json文件配置', link: './posts/前端工程化实践/packjson文件配置' },
