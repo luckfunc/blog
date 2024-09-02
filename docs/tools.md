@@ -14,6 +14,7 @@ title: 'Tools'
 - [Cascadia Code](https://github.com/microsoft/cascadia-code)
 - [MonoLisa](https://github.com/Eason0210/Monolisa/blob/master/MonoLisa-Regular.ttf)
 - [Input Mono](https://input.djr.com/)
+- [Geist Font](https://github.com/vercel/geist-font/releases/tag/1.3.0)
 - 配合使用
   1. 先下载[FiraCode](https://github.com/tonsky/FiraCode)
   2. 在下载[Operator Mono](https://github.com/beichensky/Font) 非官网
