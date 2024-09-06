@@ -81,6 +81,7 @@ function sidebar() {
         { text: 'path方法', link: './posts/nodeJs/path' },
         { text: 'os模块', link: './posts/nodeJs/os' },
         { text: 'exec小实践', link: './posts/nodeJs/exec' },
+        { text: '图片裁剪', link: './posts/nodeJs/图片裁剪' },
       ]
     },
     {
