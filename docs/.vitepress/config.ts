@@ -1,6 +1,16 @@
+import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+
+const RSSOptions: RSSOptions = {
+  title: 'LuckFunc Blog',
+  copyright: 'Copyright © 2023 luckfunc',
+  baseUrl: 'https://blog.luckfunc.com'
+}
 export default {
   title: 'Blog',
   lastUpdated: true,
+  vite: {
+    plugins: [RssPlugin(RSSOptions)],
+  },
   themeConfig: {
     siteTitle: "幸运函数",
     logo: '/avatar.png',
