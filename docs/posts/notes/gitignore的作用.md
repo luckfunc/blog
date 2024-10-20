@@ -1,10 +1,4 @@
----
-prev:
-   text: '在windows中切换IDE的终端为linux'
-   link: '/posts/notes/在windows中切换IDE的终端为linux'
-next: false
----
-## .gitignore过滤规则 by chatGPT
+# .gitignore过滤规则 by chatGPT
 
 忽略规则是 `.gitignore` 文件中的模式或规则，用于告诉 Git 哪些文件或目录应该被忽略，不纳入版本控制。`.gitignore` 文件使用简单的模式匹配规则来指定要忽略的文件或目录。
 以下是一些常用的 `.gitignore` 规则示例：

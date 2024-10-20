@@ -1,8 +1,3 @@
----
-layout: doc
-title: 'Nginx'
----
-
 ## Nginx学习
 
 ### Nginx全局配置模块

@@ -1,9 +1,3 @@
----
-next: 
-  text: 'React'
-  link: '/posts/notes/React'
----
-
 # 今年要做的事情
 
 ## TODO List

@@ -7,7 +7,7 @@ prev:
   link: '/posts/notes/git提交规范'
 next:
   text: 'gitignore的作用'
-  link: '/posts/notes/在windogitignore的作用'
+  link: '/posts/notes/gitignore的作用'
 ---
 
 ## 把你的IDE终端改头换面，让它变成Linux！
