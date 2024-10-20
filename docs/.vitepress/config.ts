@@ -2,6 +2,7 @@ import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
 
 const RSSOptions: RSSOptions = {
   title: 'LuckFunc Blog',
+  description: 'feedId:70744061308986368+userId:67831553045682176',
   copyright: 'Copyright © 2023 luckfunc',
   baseUrl: 'https://blog.luckfunc.com'
 }
