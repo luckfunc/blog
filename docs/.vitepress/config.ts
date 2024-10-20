@@ -59,6 +59,12 @@ function sidebar() {
       ]
     },
     {
+      text: '踩坑日记',
+      items: [
+        { text: 'webpack打包', link: './posts/踩坑日记/webpack打包' },
+      ]
+    },
+    {
       text: 'Notes',
       items: [
         { text: 'React', link: './posts/notes/React' },
