@@ -132,5 +132,11 @@ function sidebar() {
         { text: 'Md Notes', link: '/posts/learn/md' },
       ]
     },
+    {
+      text: 'Mac Os',
+      items: [
+        { text: 'Mac Os工具', link: '/posts/macos/index' },
+      ]
+    },
   ]
 }
