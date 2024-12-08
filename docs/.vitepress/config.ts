@@ -16,7 +16,7 @@ export default {
   themeConfig: {
     siteTitle: "幸运函数",
     logo: '/avatar.png',
-    description: '白天是个演员,晚上是个程序员',
+    description: '晚睡的程序员',
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
@@ -34,7 +34,7 @@ export default {
   },
   markdown: {
     theme: {
-      light: 'vitesse-light', // 白天模式的主题
+      light: 'vitesse-dark', // 白天模式的主题
       dark: 'vitesse-dark',       // 夜晚模式的主题
     }
   }
