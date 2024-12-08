@@ -5,9 +5,3 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Geist'; /*适合文档的字体 */
-    src: url('/fonts/GeistVF.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
