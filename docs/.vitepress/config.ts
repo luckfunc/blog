@@ -32,6 +32,12 @@ export default {
       text: 'Edit this page on GitHub'
     }
   },
+  markdown: {
+    theme: {
+      light: 'vitesse-light', // 白天模式的主题
+      dark: 'vitesse-dark',       // 夜晚模式的主题
+    }
+  }
 }
 //导航栏配置
 function nav() {
