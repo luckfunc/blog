@@ -1,10 +1,11 @@
 :root {
-  --vp-home-hero-name-color: black;
-  /* vp-home-hero-name-background: black; */
-  --vp-button-brand-bg: #65DBFB;
-  --vp-button-brand-hover-bg: #65DBFB;
-  --vp-button-brand-border: #65DBFB;
-  --vp-button-brand-hover-border: #65DBFB;
-  --vp-c-brand: #65DBFB;
+  --vp-button-brand-bg: #0969da;
+  --vp-button-brand-border: #0969da;
+  --vp-c-indigo-1: #0969da;
+}
 
+.dark {
+  --vp-button-brand-bg: #1f6feb;
+  --vp-button-brand-border: #1f6feb;
+  --vp-c-indigo-1: #1f6feb;
 }
