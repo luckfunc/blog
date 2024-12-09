@@ -12,12 +12,12 @@
 ```ts
 import { B } from '@components'
 export default function A() {
-    return (
-        <div>
-            <h1>A页面</h1>
-            <B />
-        </div>
-    )
+  return (
+    <div>
+        <h1>A页面</h1>
+        <B />
+    </div>
+  )
 }
 ```
 ### components/index.ts代码
@@ -33,12 +33,12 @@ Webpack会将C组件的代码引入到A页面，是因为B组件在其内部直�
 ```ts
 import B from '@components/B'
 export default function A() {
-    return (
-        <div>
-            <h1>A页面</h1>
-            <B />
-        </div>
-    )
+  return (
+    <div>
+        <h1>A页面</h1>
+        <B />
+    </div>
+  )
 }
 ```
 这样B页面里面没有引用C组件，就不会将C组件的样式打包到A页面中。
