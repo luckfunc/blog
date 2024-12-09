@@ -12,6 +12,9 @@ export default {
   base: '/',
   vite: {
     plugins: [RssPlugin(RSSOptions)],
+    server: {
+      port: 8080,
+    },
   },
   themeConfig: {
     siteTitle: "幸运函数",
