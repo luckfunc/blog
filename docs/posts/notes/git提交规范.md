@@ -28,7 +28,7 @@ next:
 
 例如：
 ```bash
-git commit -m "feat(users): add login functionality"
+git commit -m 'feat(users): add login functionality'
 ```
 表示新增了一个用户登录的功能。
 
