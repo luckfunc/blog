@@ -14,8 +14,8 @@ import { B } from '@components'
 export default function A() {
   return (
     <div>
-        <h1>A页面</h1>
-        <B />
+      <h1>A页面</h1>
+      <B />
     </div>
   )
 }
@@ -35,8 +35,8 @@ import B from '@components/B'
 export default function A() {
   return (
     <div>
-        <h1>A页面</h1>
-        <B />
+      <h1>A页面</h1>
+      <B />
     </div>
   )
 }
