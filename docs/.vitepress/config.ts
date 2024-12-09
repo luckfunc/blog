@@ -60,9 +60,9 @@ function nav() {
 function sidebar() {
   return [
     {
-      text: '2024TODO',
+      text: '2024年终总结',
       items: [
-        { text: '2024TODO', link: '/posts/2024-todo/todo' },
+        { text: '2024年终总结', link: '/posts/2024-年终总结/2024' },
       ]
     },
     {
