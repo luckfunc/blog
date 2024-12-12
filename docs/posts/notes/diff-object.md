@@ -32,5 +32,4 @@ function deepEqual(obj1, obj2) {
 	// 如果obj1和obj2的每一个key都相等,那么obj1和obj2相等
 	return true;
 }
-
 ```
