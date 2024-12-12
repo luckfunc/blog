@@ -87,6 +87,7 @@ function sidebar() {
         { text: '切换IDE的终端为linux', link: '/posts/notes/在windows中切换IDE的终端为linux' },
         { text: 'gitignore过滤规则', link: '/posts/notes/gitignore的作用' },
         { text: 'script标签的defer和async区别', link: '/posts/notes/script标签的defer和async区别' },
+        { text: 'Diff Object', link: '/posts/notes/diff-object' }
       ]
     },
     {
