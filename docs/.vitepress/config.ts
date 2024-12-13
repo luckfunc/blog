@@ -94,7 +94,8 @@ function sidebar() {
     {
       text: 'JavaScript',
       items: [
-        { text: 'import和export', link: '/posts/js/import' }
+        { text: 'import和export', link: '/posts/js/import' },
+        { text: '让你的终端输出有颜色的console.md', link: '/posts/js/让你的终端输出有颜色的console.md' }
       ]
     },
     {
