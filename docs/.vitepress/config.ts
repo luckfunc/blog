@@ -72,6 +72,7 @@ function sidebar() {
       text: '踩坑日记',
       items: [
         { text: 'webpack打包', link: '/posts/踩坑日记/webpack打包' },
+        { text: '你不知道的console.log', link: '/posts/踩坑日记/你不知道的console.log' },
       ]
     },
     {
