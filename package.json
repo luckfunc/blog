@@ -13,8 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vitepress": "^1.0.0-alpha.33",
+    "vitepress": "^1.0.0-rc.40",
     "vitepress-plugin-rss": "^0.2.10",
-    "vue": "^3.2.45"
+    "vue": "^3.4.0",
+    "@giscus/vue": "^2.4.0"
   }
 }
