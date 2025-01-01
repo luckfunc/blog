@@ -5,7 +5,7 @@
         :theme="isDark ? 'dark' : 'light'"
         id="comments"
         repo="luckfunc/blog"
-        repoid="R_kgDOIN2Meg"
+        repoid="R_kgDOIrDrIg"
         category="General"
         category-id="DIC_kwDOIrDrIs4ClpeT"
         mapping="pathname"
