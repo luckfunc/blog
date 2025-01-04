@@ -33,6 +33,8 @@ title: 'Tools'
   ![Bento Grids](/icons/bento-design-preview.png)
 ## 免费快速的图床
 - [免费快速的图床](https://tucdn.wpon.cn/)
+## 图片压缩
+- [tinypng](https://tinypng.com/)
 ## 表格组件
 - [gridmanager组件官网](https://gridmanager.lovejavascript.com/api/index.html)
 ## 前端官网参考
