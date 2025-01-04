@@ -35,6 +35,8 @@ title: 'Tools'
 - [免费快速的图床](https://tucdn.wpon.cn/)
 ## 图片压缩
 - [tinypng](https://tinypng.com/)
+## CSSTransition 组件
+- [CSSTransition](https://reactcommunity.org/react-transition-group/css-transition),它的作用是通过在不同时机应用不同类名来控制其子组件样式
 ## 表格组件
 - [gridmanager组件官网](https://gridmanager.lovejavascript.com/api/index.html)
 ## 前端官网参考
