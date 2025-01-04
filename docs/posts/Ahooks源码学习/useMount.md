@@ -7,13 +7,6 @@ const useMount = (fn: () => void) => {
         fn();
     }, [])
 }
-const useUnmount = (fn: () => void) => {
-	useEffect(() => {
-		return () => {
-			fn();
-		}
-	}, []);
-}
 ```
 ## ahooks工具库的严谨性
 > 相比于上面的代码 ahooks的源码实现多了fn?.();，在typescript环境中我们发现这个fn这个参数是必填的，但是为什么ahooks源码里面会有这一段fn?.()，由于这个工具库是可以在Js环境下运行的
