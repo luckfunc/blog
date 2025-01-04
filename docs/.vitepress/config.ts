@@ -78,7 +78,7 @@ function sidebar() {
     {
       text: 'Ahooks源码学习',
       items: [
-        { text: 'useMount和useUnmount', link: '/posts/Ahooks源码学习/useMount和useUnmount' },
+        { text: 'useMount', link: '/posts/Ahooks源码学习/useMount' },
       ]
     },
     {
