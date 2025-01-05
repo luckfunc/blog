@@ -101,6 +101,7 @@ function sidebar() {
       text: 'JavaScript',
       items: [
         { text: 'import和export', link: '/posts/js/import' },
+        { text: 'myPromise', link: '/posts/js/myPromise' },
         { text: '让你的终端输出有颜色的console.md', link: '/posts/js/让你的终端输出有颜色的console.md' }
       ]
     },
