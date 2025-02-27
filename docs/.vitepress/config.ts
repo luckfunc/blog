@@ -63,6 +63,12 @@ function nav() {
 function sidebar() {
   return [
     {
+      text: '2025年终总结',
+      items: [
+        { text: '2025今年计划', link: '/posts/2025-今年计划' },
+      ]
+    },
+    {
       text: '2024年终总结',
       items: [
         { text: '2024年终总结', link: '/posts/2024-年终总结/2024' },
