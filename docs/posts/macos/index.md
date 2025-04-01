@@ -11,3 +11,9 @@ source .zshrc
 ```shell
 webstorm .
 ```
+使用br别名 自动执行brotli xxx.file 输出文件体积，以及自动删除
+```shell
+alias br='f(){ brotli -f "$1" && du -h "$1.br" && rm "$1.br"; }; f'
+## 相当于
+brotli xxx.file => ls -h xxx.file.br => rm rf xxx.file.br
+```
