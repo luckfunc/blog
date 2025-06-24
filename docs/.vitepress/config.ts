@@ -75,6 +75,12 @@ function sidebar() {
       ]
     },
     {
+      text: 'SSL证书自动续签',
+      items: [
+        { text: 'SSL证书自动续签', link: '/posts/ssl证书自动续签/index' },
+      ]
+    },
+    {
       text: '踩坑日记',
       items: [
         { text: 'webpack打包', link: '/posts/踩坑日记/webpack打包' },
