@@ -46,3 +46,5 @@ title: 'Tools'
     - [Wix](https://www.wix.com/)
     - [webflow](https://webflow.com/) 支持更多自定义
 ## [SST Guide](https://guide.sst.dev/)
+
+## [极简主页](https://afx-team.github.io/)
