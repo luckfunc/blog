@@ -8,14 +8,17 @@ importers:
 
   .:
     dependencies:
+      '@giscus/vue':
+        specifier: ^2.4.0
+        version: 2.4.0(vue@3.4.20)
       vitepress:
-        specifier: ^1.0.0-alpha.33
-        version: 1.0.0-rc.44(@algolia/client-search@4.22.1)(search-insights@2.13.0)
+        specifier: ^1.0.0-rc.40
+        version: 1.0.0-rc.44(@algolia/client-search@4.22.1)(postcss@8.4.35)(search-insights@2.13.0)
       vitepress-plugin-rss:
         specifier: ^0.2.10
-        version: 0.2.10(vitepress@1.0.0-rc.44)
+        version: 0.2.10(vitepress@1.0.0-rc.44(@algolia/client-search@4.22.1)(postcss@8.4.35)(search-insights@2.13.0))
       vue:
-        specifier: ^3.2.45
+        specifier: ^3.4.0
         version: 3.4.20
 
 packages:
@@ -260,8 +263,19 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@giscus/vue@2.4.0':
+    resolution: {integrity: sha512-QOxKHgsMT91myyQagP2v20YYAei1ByZuc3qcaYxbHx4AwOeyVrybDIuRFwG9YDv6OraC86jYnU4Ixd37ddC/0A==}
+    peerDependencies:
+      vue: '>=3.2.0'
+
   '@jridgewell/sourcemap-codec@1.4.15':
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+
+  '@lit-labs/ssr-dom-shim@1.4.0':
+    resolution: {integrity: sha512-ficsEARKnmmW5njugNYKipTm4SFnbik7CXtoencDZzmzo/dQ+2Q0bgkzJuoJP20Aj0F+izzJjOqsnkd6F/o1bw==}
+
+  '@lit/reactive-element@2.1.1':
+    resolution: {integrity: sha512-N+dm5PAYdQ8e6UlywyyrgI2t++wFGXfHx+dSJ1oBrg6FAxUj40jId++EaRm80MKX5JnlH1sBsyZ5h0bcZKemCg==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -360,6 +374,9 @@ packages:
 
   '@types/mdurl@1.0.5':
     resolution: {integrity: sha512-6L6VymKTzYSrEf4Nev4Xa1LCHKrlTlYCBMTlQKFuddo1CvQcE52I0mwfOJayueUC7MJuXOeHTcIU683lzd0cUA==}
+
+  '@types/trusted-types@2.0.7':
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
@@ -522,6 +539,9 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  giscus@1.6.0:
+    resolution: {integrity: sha512-Zrsi8r4t1LVW950keaWcsURuZUQwUaMKjvJgTCY125vkW6OiEBkatE7ScJDbpqKHdZwb///7FVC21SE3iFK3PQ==}
+
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -559,6 +579,15 @@ packages:
   kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
+
+  lit-element@4.2.1:
+    resolution: {integrity: sha512-WGAWRGzirAgyphK2urmYOV72tlvnxw7YfyLDgQ+OZnM9vQQBQnumQ7jUJe6unEzwGU3ahFOjuz1iz1jjrpCPuw==}
+
+  lit-html@3.3.1:
+    resolution: {integrity: sha512-S9hbyDu/vs1qNrithiNyeyv64c9yqiW9l+DBgI18fL+MTvOtWoFR0FWiyq1TxaYef5wNlpEmzlXoBlZEO+WjoA==}
+
+  lit@3.3.1:
+    resolution: {integrity: sha512-Ksr/8L3PTapbdXJCk+EJVB78jDodUMaP54gD24W186zGRARvwrsPfS60wae/SSCTCNZVPd1chXqio1qHQmu4NA==}
 
   magic-string@0.30.7:
     resolution: {integrity: sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA==}
@@ -870,6 +899,7 @@ snapshots:
       '@algolia/autocomplete-preset-algolia': 1.9.3(@algolia/client-search@4.22.1)(algoliasearch@4.22.1)
       '@docsearch/css': 3.5.2
       algoliasearch: 4.22.1
+    optionalDependencies:
       search-insights: 2.13.0
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -943,7 +973,18 @@ snapshots:
   '@esbuild/win32-x64@0.19.12':
     optional: true
 
+  '@giscus/vue@2.4.0(vue@3.4.20)':
+    dependencies:
+      giscus: 1.6.0
+      vue: 3.4.20
+
   '@jridgewell/sourcemap-codec@1.4.15': {}
+
+  '@lit-labs/ssr-dom-shim@1.4.0': {}
+
+  '@lit/reactive-element@2.1.1':
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.4.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1017,6 +1058,8 @@ snapshots:
       '@types/mdurl': 1.0.5
 
   '@types/mdurl@1.0.5': {}
+
+  '@types/trusted-types@2.0.7': {}
 
   '@types/web-bluetooth@0.0.20': {}
 
@@ -1111,8 +1154,9 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.9.0(vue@3.4.20)
       '@vueuse/shared': 10.9.0(vue@3.4.20)
-      focus-trap: 7.5.4
       vue-demi: 0.14.7(vue@3.4.20)
+    optionalDependencies:
+      focus-trap: 7.5.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -1222,6 +1266,10 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
+  giscus@1.6.0:
+    dependencies:
+      lit: 3.3.1
+
   glob-parent@5.1.2:
     dependencies:
       is-glob: 4.0.3
@@ -1253,6 +1301,22 @@ snapshots:
       esprima: 4.0.1
 
   kind-of@6.0.3: {}
+
+  lit-element@4.2.1:
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.4.0
+      '@lit/reactive-element': 2.1.1
+      lit-html: 3.3.1
+
+  lit-html@3.3.1:
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
+  lit@3.3.1:
+    dependencies:
+      '@lit/reactive-element': 2.1.1
+      lit-element: 4.2.1
+      lit-html: 3.3.1
 
   magic-string@0.30.7:
     dependencies:
@@ -1361,14 +1425,14 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-plugin-rss@0.2.10(vitepress@1.0.0-rc.44):
+  vitepress-plugin-rss@0.2.10(vitepress@1.0.0-rc.44(@algolia/client-search@4.22.1)(postcss@8.4.35)(search-insights@2.13.0)):
     dependencies:
       '@sugarat/theme-shared': 0.0.2
       fast-glob: 3.3.2
       feed: 4.2.2
-      vitepress: 1.0.0-rc.44(@algolia/client-search@4.22.1)(search-insights@2.13.0)
+      vitepress: 1.0.0-rc.44(@algolia/client-search@4.22.1)(postcss@8.4.35)(search-insights@2.13.0)
 
-  vitepress@1.0.0-rc.44(@algolia/client-search@4.22.1)(search-insights@2.13.0):
+  vitepress@1.0.0-rc.44(@algolia/client-search@4.22.1)(postcss@8.4.35)(search-insights@2.13.0):
     dependencies:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2(@algolia/client-search@4.22.1)(search-insights@2.13.0)
@@ -1385,6 +1449,8 @@ snapshots:
       shiki: 1.1.7
       vite: 5.1.4
       vue: 3.4.20
+    optionalDependencies:
+      postcss: 8.4.35
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/node'
