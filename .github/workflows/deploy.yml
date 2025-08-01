@@ -32,9 +32,8 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.USER_HOST }}
-          user: ${{ secrets.USER_NAME }}
-          pass: ${{ secrets.USER_PASS }}
-          connect_timeout: 10s
-          local: 'docs/.vitepress/dist/*'
-          # source: "docs/.vitepress/dist/*"
-          remote: ${{ secrets.USER_TARGET }}
+          username: ${{ secrets.USER_NAME }}
+          password: ${{ secrets.USER_PASS }}
+          source: 'docs/.vitepress/dist/*'
+          target: ${{ secrets.USER_TARGET }}
+          strip_components: 1
