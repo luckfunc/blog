@@ -28,6 +28,10 @@ jobs:
         run: npm install
       - name: build app
         run: npm run build
+        # 新增的调试步骤
+      - name: List build files
+        run: ls -laR docs/.vitepress/dist
+
       - name: 部署到云服务器
         uses: appleboy/scp-action@v0.1.7
         with:
