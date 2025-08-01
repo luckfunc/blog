@@ -36,4 +36,3 @@ jobs:
           password: ${{ secrets.USER_PASS }}
           source: 'docs/.vitepress/dist/*'
           target: ${{ secrets.USER_TARGET }}
-          strip_components: 1
