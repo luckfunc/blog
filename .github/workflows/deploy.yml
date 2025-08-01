@@ -34,5 +34,5 @@ jobs:
           host: ${{ secrets.USER_HOST }}
           username: ${{ secrets.USER_NAME }}
           password: ${{ secrets.USER_PASS }}
-          source: docs/.vitepress/dist/*
+          source: "docs/.vitepress/dist/*"
           target: ${{ secrets.USER_TARGET }}
