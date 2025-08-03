@@ -81,6 +81,12 @@ function sidebar() {
       ]
     },
     {
+      text: '前端性能优化',
+      items: [
+        { text: '前端性能优化', link: '/posts/性能优化学习/前端性能优化思路' },
+      ]
+    },
+    {
       text: '踩坑日记',
       items: [
         { text: 'webpack打包', link: '/posts/踩坑日记/webpack打包' },
