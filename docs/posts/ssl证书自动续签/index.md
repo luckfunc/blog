@@ -55,6 +55,7 @@ wget -O - https://get.acme.sh | sh -s email=your@email.com
 > 被迫使用“手动 DNS 验证”方式。虽然我的域名是从阿里云购买的，但实际使用的 DNS 是万网默认的：
 >
 > ```bash
+> # 验证当前域名是否在使用阿里云云解析，发现是万网的dns服务商
 > dig NS const.site +short
 > dns18.hichina.com.
 > dns17.hichina.com.
@@ -76,6 +77,7 @@ acme.sh --issue -d *.const.site -d const.site \
 > 如果能看到刚才添加的值再执行下面的命令，否则建议稍等 1～2 分钟再试。
 
 ```bash
+# 手动 DNS 验证模式的强确认参数，表示我知道还需要继续手动处理 TXT 记录
 acme.sh --renew -d *.const.site \
   --yes-I-know-dns-manual-mode-enough-go-ahead-please
 ```
