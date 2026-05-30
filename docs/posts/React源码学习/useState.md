@@ -118,3 +118,72 @@
 </html>
 ```
 如果只是实现我上面的两种需求，这个useState我觉得已经满足要求了，但是 如果还要加上address字段呢? 现有的用类型判断的方法是不是失效了?
+
+所以可以换一种思路：不用类型区分状态，而是用数组保存所有状态，也就是react里面的队列。再用下标记录每一次 `useState` 对应的位置。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>useState hooks</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    let hooks = [];
+    let hookIndex = 0;
+
+    function useState(initialState) {
+      let currentIndex  = hookIndex;
+      if (hooks[currentIndex] === undefined) {
+        hooks[currentIndex] = initialState;
+      }
+      const setState = (action) => {
+        hooks[currentIndex] = typeof action === "function" ? action(hooks[currentIndex]) : action;
+        render();
+      }
+      hookIndex ++;
+
+      return [hooks[currentIndex], setState]
+    }
+    function App() {
+      const [age, setAge] = useState(18);
+      const [name, setName] = useState('Jack');
+      const [address, setAddress] = useState('Github Repo');
+      const [techStack, setTechStack] = useState('JavaScript');
+      window.setAge = setAge;
+      window.setName = setName;
+      window.setAddress = setAddress;
+      window.setTechStack = setTechStack;
+
+      return `
+      <div onclick = "window.setName('Tom')" >
+        name: ${name}
+      </div>
+      <button onclick="window.setAge((prev) => {
+        return prev + 1
+      });">age: ${age}</button>
+      <div onclick = "window.setAddress('Gitlab Repo')" >
+        address: ${address}
+      </div>
+      <div onclick = "window.setTechStack('Tech Stack')" >
+        techStack: ${techStack}
+      </div>
+      `
+    }
+    const render = () => {
+      hookIndex = 0;
+      document.getElementById('root').innerHTML = App();
+    }
+    render();
+
+  </script>
+
+</body>
+
+</html>
+```
