@@ -100,6 +100,12 @@ function sidebar() {
       ]
     },
     {
+      text: 'React源码学习',
+      items: [
+        { text: 'useState', link: '/posts/React源码学习/useState' },
+      ]
+    },
+    {
       text: 'Ahooks源码学习',
       items: [
         { text: 'useMount', link: '/posts/Ahooks源码学习/useMount' },
