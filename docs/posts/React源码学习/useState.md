@@ -189,4 +189,138 @@
 </html>
 ```
 
-上面这个实现，已经可以满足我的需求了，那为啥 React 用的不是数组 + 下标，而是链表？这个到底有啥好处
+上面这个实现，已经可以满足我的需求了，那为啥 React 用的不是数组 + 下标，而是链表？这个到底有啥好处。
+先不着急，我发现了一个问题。我上面这个写法，每次setState的时候就会render一次。我先来解决这个问题。
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini useState</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    let hooks = [];
+    let hookIndex = 0;
+    let renderCount = 0;
+    let isBatching = false;
+
+    function batch(fn) {
+      isBatching = true;
+      fn();
+      isBatching = false;
+      render();
+    }
+
+    function useState(initialState) {
+      const currentIndex = hookIndex;
+
+      if (hooks[currentIndex] === undefined) {
+        hooks[currentIndex] = {
+          memoizedState:
+            typeof initialState === 'function' ? initialState() : initialState,
+          queue: [],
+        };
+      }
+
+      const hook = hooks[currentIndex];
+
+      if (hook.queue.length > 0) {
+        let newState = hook.memoizedState;
+
+        for (const action of hook.queue) {
+          newState =
+            typeof action === 'function'
+              ? action(newState)
+              : action;
+        }
+
+        hook.memoizedState = newState;
+        hook.queue = [];
+      }
+
+      function setState(action) {
+        hook.queue.push(action);
+
+        if (!isBatching) {
+          render();
+        }
+      }
+
+      hookIndex++;
+
+      return [hook.memoizedState, setState];
+    }
+
+    function App() {
+      const [age, setAge] = useState(18);
+      const [name, setName] = useState('Jack');
+      const [address, setAddress] = useState('Github Repo');
+      const [techStack, setTechStack] = useState('JavaScript');
+
+      function handleAgeClick() {
+        setAge((prev) => prev + 1);
+        setAge((prev) => prev + 1);
+        setAge((prev) => prev + 1);
+      }
+
+      function handleNameClick() {
+        setName('Tom');
+      }
+
+      function handleAddressClick() {
+        setAddress('Gitlab Repo');
+      }
+
+      function handleTechStackClick() {
+        setTechStack((prev) =>
+          prev === 'JavaScript' ? 'React' : 'JavaScript'
+        );
+      }
+
+      window.handleAgeClick = handleAgeClick;
+      window.handleNameClick = handleNameClick;
+      window.handleAddressClick = handleAddressClick;
+      window.handleTechStackClick = handleTechStackClick;
+      window.batch = batch;
+
+      console.log('hooks:', hooks);
+
+      return `
+        <div>
+          <button onclick="batch(window.handleAgeClick)">
+            age: ${age}
+          </button>
+
+          <div onclick="batch(window.handleNameClick)">
+            name: ${name}
+          </div>
+
+          <div onclick="batch(window.handleAddressClick)">
+            address: ${address}
+          </div>
+
+          <div onclick="batch(window.handleTechStackClick)">
+            techStack: ${techStack}
+          </div>
+        </div>
+      `;
+    }
+
+    function render() {
+      hookIndex = 0;
+      renderCount++;
+
+      console.log('渲染了', renderCount, '次');
+
+      document.getElementById('root').innerHTML = App();
+    }
+
+    render();
+  </script>
+</body>
+</html>
+```
