@@ -324,3 +324,144 @@
 </body>
 </html>
 ```
+下来在看下为什么我们一直以来的实践都是把useState的hook放在最上面 且不要在if里面写setState
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini useState</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    let hooks = [];
+    let hookIndex = 0;
+    let renderCount = 0;
+    let isBatching = false;
+
+    function batch(fn) {
+      isBatching = true;
+      fn();
+      isBatching = false;
+      render();
+    }
+
+    function useState(initialState) {
+      const currentIndex = hookIndex;
+
+      if (hooks[currentIndex] === undefined) {
+        hooks[currentIndex] = {
+          memoizedState:
+            typeof initialState === 'function' ? initialState() : initialState,
+          queue: [],
+        };
+      }
+
+      const hook = hooks[currentIndex];
+
+      if (hook.queue.length > 0) {
+        let newState = hook.memoizedState;
+
+        for (const action of hook.queue) {
+          newState =
+            typeof action === 'function'
+              ? action(newState)
+              : action;
+        }
+
+        hook.memoizedState = newState;
+        hook.queue = [];
+      }
+
+      function setState(action) {
+        hook.queue.push(action);
+
+        if (!isBatching) {
+          render();
+        }
+      }
+
+      hookIndex++;
+
+      return [hook.memoizedState, setState];
+    }
+
+    function App() {
+      const [age, setAge] = useState(18);
+      const [name, setName] = useState('Jack');
+      if (age > 20) {
+        const [flag] = useState(null);
+        console.log('flag', flag);
+      }
+
+      const [address, setAddress] = useState('Github Repo');
+      const [techStack, setTechStack] = useState('JavaScript');
+
+      function handleAgeClick() {
+        setAge((prev) => prev + 1);
+        setAge((prev) => prev + 1);
+        setAge((prev) => prev + 1);
+      }
+
+      function handleNameClick() {
+        setName('Tom');
+      }
+
+      function handleAddressClick() {
+        setAddress('Gitlab Repo');
+      }
+
+      function handleTechStackClick() {
+        setTechStack((prev) =>
+          prev === 'JavaScript' ? 'React' : 'JavaScript'
+        );
+      }
+
+      window.handleAgeClick = handleAgeClick;
+      window.handleNameClick = handleNameClick;
+      window.handleAddressClick = handleAddressClick;
+      window.handleTechStackClick = handleTechStackClick;
+      window.batch = batch;
+
+      console.log('hooks:', hooks);
+
+      return `
+        <div>
+          <button onclick="batch(window.handleAgeClick)">
+            age: ${age}
+          </button>
+
+          <div onclick="batch(window.handleNameClick)">
+            name: ${name}
+          </div>
+
+          <div onclick="batch(window.handleAddressClick)">
+            address: ${address}
+          </div>
+
+          <div onclick="batch(window.handleTechStackClick)">
+            techStack: ${techStack}
+          </div>
+        </div>
+      `;
+    }
+
+    function render() {
+      hookIndex = 0;
+      renderCount++;
+
+      console.log('渲染了', renderCount, '次');
+
+      document.getElementById('root').innerHTML = App();
+    }
+
+    render();
+  </script>
+</body>
+</html>
+```
+当点击age的时候 会执行 click事件函数，函数里面会setState吧state改成21。这个时候重新触发渲染，所有的hook都重新执行，那么之前在hooks数组
+里面根据下标保存的memoizedState是不是就错乱了。看到控制台的输出 flag: Github Repo
